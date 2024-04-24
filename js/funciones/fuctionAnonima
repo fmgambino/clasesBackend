@@ -1,0 +1,5 @@
+//Generalmente, las funciones anónimas se asignan a variables declaradas como constantes
+const suma  = function (a, b) { return a + b };
+const resta = function (a, b) { return a - b };
+console.log("La Suma es: ", suma(15,20));
+console.log("La Resta es: ",resta(15,5));
