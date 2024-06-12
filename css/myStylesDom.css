@@ -1,0 +1,22 @@
+.botonEnviar{
+    padding: 10px;
+    width: 200px;
+    color: aliceblue;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botonEnviar:hover{
+    padding: 10px;
+    width: 200px;
+    color: aliceblue;
+    background-color: rgb(15, 88, 90);
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer; /* Cambia el cursor a una mano */
+}
