@@ -3,55 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Responsivo con Carrito</title>
+    <title>Menú Responsivo</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-    <!-- Font Awesome para iconos -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://seeklogo.com/images/M/mini-market-logo-BF4A1CB5E0-seeklogo.com.png" width="30" height="30" alt="Logo">
-            </a>
-            <!-- Icono de carrito en el menú -->
-            <a href="#" class="cart-icon ml-auto">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge badge-pill badge-primary">0</span> <!-- Contador de productos -->
-            </a>
-            <!-- Botón hamburguesa para móviles -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Colapsable navbar content -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">NOSOTROS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TIENDA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="custom-control custom-switch">
-                            <input type="checkbox" class="custom-control-input" id="modeToggle">
-                            <label class="custom-control-label" for="modeToggle">Modo Oscuro</label>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+        <a class="navbar-brand" href="#">
+            <img src="https://seeklogo.com/images/M/mini-market-logo-BF4A1CB5E0-seeklogo.com.png" width="30" height="30" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">BLOG</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TIENDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTO</a>
+                </li>
+                <li class="nav-item">
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="modeToggle">
+                        <label class="custom-control-label" for="modeToggle"></label>
+                    </div>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -68,7 +57,7 @@
                     <span class="precio-oferta">$999 USD</span>
                     <span class="text-muted"><s>$1500 USD</s></span>
                   </div>
-                  <a href="#" class="btn btn-primary mt-2 btn-sumar-carrito">Sumar Carrito</a>
+                  <a href="#" class="btn btn-primary mt-2">Sumar Carrito</a>
                 </div>
               </div>
             </div>
@@ -83,7 +72,7 @@
                     <span class="precio-oferta">$999 USD</span>
                     <span class="text-muted"><s>$1500 USD</s></span>
                   </div>
-                  <a href="#" class="btn btn-primary mt-2 btn-sumar-carrito">Sumar Carrito</a>
+                  <a href="#" class="btn btn-primary mt-2">Sumar Carrito</a>
                 </div>
               </div>
             </div>
@@ -98,7 +87,7 @@
                     <span class="precio-oferta">$999 USD</span>
                     <span class="text-muted"><s>$1500 USD</s></span>
                   </div>
-                  <a href="#" class="btn btn-primary mt-2 btn-sumar-carrito">Sumar Carrito</a>
+                  <a href="#" class="btn btn-primary mt-2">Sumar Carrito</a>
                 </div>
               </div>
             </div>
@@ -106,15 +95,11 @@
         </div>
     </section>
 
-    <!-- Bootstrap JS y dependencias -->
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Font Awesome JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-
-    <!-- JavaScript personalizado -->
     <script src="script.js"></script>
 </body>
 </html>
