@@ -1,0 +1,118 @@
+/* ESTILOS NVABAR*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que el navbar esté sobre otros elementos al hacer scroll */
+    background-color: #ffffff; /* Color de fondo del navbar */
+  }
+  
+  .navbar-brand {
+    margin-right: auto; /* Centra el logo en la barra de navegación */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-brand {
+        padding-top: 30px;
+        margin-right: 0; /* Ajuste para centrado en pantallas pequeñas */
+        gap: 20px;
+    }
+  }
+  
+
+
+/* Estilos para el tema claro */
+body {
+    padding-top: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important; /* Color de texto para el tema claro */
+}
+
+.navbar-light .navbar-brand img {
+    filter: none; /* Restablece el filtro del logo para el tema claro */
+}
+
+/* Estilos para el tema oscuro */
+body.dark-mode {
+    background-color: #343a40;
+    color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important; /* Color de texto para el tema oscuro */
+}
+
+.navbar-dark .navbar-brand img {
+    filter: brightness(0) invert(1); /* Invertir el logo para el tema oscuro */
+}
+
+/* Custom switch styles */
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: none;
+}
+.custom-control-label::before {
+    transition: background-color 0.3s, border-color 0.3s;
+}
+.custom-control-label::after {
+    top: 0.1rem;
+    left: calc(-1.5rem + 0.1rem);
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: white;
+    border-radius: 50%;
+    transition: left 0.3s;
+}
+.custom-control-input:checked ~ .custom-control-label::after {
+    left: calc(1.5rem - 0.1rem);
+}
+
+
+/* ESTILOS CARD PRODUCTOS*/
+
+.carruselProductos{
+    
+    padding-top: 30px;
+
+}
+.card-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Espacio entre tarjetas */
+  }
+  
+  .card {
+    flex: 1 0 300px; /* Establece el ancho mínimo de las tarjetas */
+    max-width: 18rem; /* Ancho máximo de las tarjetas */
+    gap: 50px;
+  }
+  
+  .precio-oferta {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    color: #28a745; /* Color verde para indicar oferta */
+    font-weight: bold; /* Texto en negrita */
+  }
+
+/* Estilos adicionales para ajustar el icono de carrito y el logo en el menú */
+@media (min-width: 992px) {
+    .navbar-brand img {
+        margin-right: 5px; /* Espacio entre el logo y el texto del nombre de la tienda */
+    }
+    .navbar-brand span {
+        font-size: 1.5rem; /* Tamaño de fuente más grande para el nombre de la tienda */
+    }
+    .navbar .cart-icon {
+        margin-right: 10px; /* Espacio entre el icono de carrito y el botón hamburguesa */
+    }
+    .navbar-toggler {
+        order: 3; /* Coloca el botón hamburguesa al final en dispositivos grandes */
+    }
+    .cart-icon {
+        order: 2; /* Coloca el icono de carrito antes del botón hamburguesa */
+    }
+}
